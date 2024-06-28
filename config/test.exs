@@ -25,3 +25,7 @@ config :logger, level: :warning
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
+
+# Suggested in: https://ash-hq.org/docs/guides/ash/latest/development/testing
+config :ash, :disable_async?, true
+config :ash, :missed_notifications, :ignore
